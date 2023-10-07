@@ -1,0 +1,125 @@
+body{
+    background-image: url("./images/img1.jpg");
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 35%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 10px;
+    background-color: #f0fbff;
+}
+
+.container h1{
+    font-size: 28px;
+    text-align: center;
+}
+
+img{
+    height: 28px;
+    width: auto;
+}
+
+.main{
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main input{
+    border: 0;
+    outline: 0;
+    color: #2c2b2b;
+    background-color: #c5c1c1;
+    padding: 6px 10px;
+    margin-left: 25px;
+    border-radius: 10px;
+    transition: color 0.5s, background 0s;
+}
+
+.main input:hover, .main input:hover::placeholder, .main input:active{
+    background-color: rgb(147, 145, 145);
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+button{
+    width: 15%;
+    border: 0;
+    outline: 0;
+    background-color: #ebe1e1;
+    margin: 20px 40%;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: color 0.5s, background 0.5s;
+}
+
+button:hover{
+    background: red;
+    color: white;
+    padding: 8px 15px;
+}
+
+
+ul{
+    padding: 0px 24px;
+}
+
+ul li{
+    margin: 0;
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 30px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(150, 169, 235);
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 15px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: relative;
+    color: white;
+    font-size: 13px;
+    float: right;
+    padding: 3px 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+}
+
+ul li span:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
